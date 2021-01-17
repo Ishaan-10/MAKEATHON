@@ -1,4 +1,65 @@
-body {
-  margin: 0;
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 97, 242);
+    background: linear-gradient(293.11deg, #000000 -9.33%, rgba(61, 4, 81, 0.87) 107.28%);
+    overflow-y: hidden;
+}
+section{
+    width: 85%;
+    margin: 0px auto;
 }
 
+h1{
+    text-align: right;
+    font-family: 'Anurati';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7rem;
+    /* line-height: 8.4rem; */
+    background: linear-gradient(#EAAB48, #ED885B, #F24282);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right: 8%;
+    /* margin-top: 5%; */
+    /* margin-left: 10%; */
+}
+.content{
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    grid-gap: 2rem;
+}
+
+.particle{
+}
+
+.trophy img{
+    padding-top: 10%;
+    height: 80%;
+    text-align: center;
+}
+.trophy{
+    text-align: center;
+}
+
+#canvas {
+    text-align: center;
+	display: block;
+	margin: auto;
+}
+
+@media (max-width:1024px){
+
+    .particle{
+        display: none;
+    }
+    .content{
+        display: block;
+    }
+    .trophy{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
