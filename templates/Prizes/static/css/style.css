@@ -43,7 +43,7 @@ h1 {
 }
 
 .trophy img {
-  text-align: center;
+  text-align: center; 
 }
 .trophy {
   text-align: center;
@@ -76,13 +76,13 @@ h1 {
     text-align: center;
   }
 }
-@media (min-width: 760px) {
+ @media (min-width: 760px) {
   .trophy img {
     padding-top: 2rem;
-    height: 45rem;
+    height: 80%;
     text-align: center;
   }
-  h1 {
-    font-size: 10rem;
-  }
-}
+   h1 {
+    font-size:900%;
+  } 
+} 
