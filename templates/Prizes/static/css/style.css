@@ -1,99 +1,88 @@
-
-
-
-
-body{
-    padding: 0;
-    margin: 0;
-     /* background: rgb(0, 97, 242); */ 
-    /* background: linear-gradient(293.11deg, #000000 -9.33%, rgba(61, 4, 81, 0.87) 107.28%); */
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,42,148,1) 100%, rgba(0,212,255,1) 100%);
-    overflow-y: hidden;
-     /* background-repeat: no-repeat;  */
-     background-position: center; 
-      background-size:cover;
-     background-attachment: fixed;
-     z-index: -1;
-     
+body {
+  padding: 0;
+  margin: 0;
+  /* background: rgb(0, 97, 242); */
+  /* background: linear-gradient(293.11deg, #000000 -9.33%, rgba(61, 4, 81, 0.87) 107.28%); */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(134, 42, 148, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  overflow-y: hidden;
+  /* background-repeat: no-repeat;  */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
 }
-section{
-    max-width: 100%; 
-    margin: 0rem auto;
-}
-
-h1{
-    text-align: right;
-    font-family: 'Anurati';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 5rem;
-    /* line-height: 8.4rem; */
-    background: linear-gradient(#EAAB48, #ED885B, #F24282);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    margin-right: 8%;
-    /* margin-top: 5%; */
-    /* margin-left: 10%; */
-}
-.content{
-    display: grid;
-    grid-template-columns: 70fr 30fr;
-    grid-gap: 2rem;
+section {
+  max-width: 100%;
+  margin: 0rem auto;
 }
 
-
-
-.trophy img{
-    
-    text-align: center;
+h1 {
+  text-align: right;
+  font-family: "Anurati";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 5rem;
+  /* line-height: 8.4rem; */
+  background: linear-gradient(#eaab48, #ed885b, #f24282);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-right: 8%;
+  /* margin-top: 5%; */
+  /* margin-left: 10%; */
 }
-.trophy{
-    text-align: center;
+.content {
+  display: grid;
+  grid-template-columns: 70fr 30fr;
+  grid-gap: 2rem;
+}
+
+.trophy img {
+  text-align: center;
+}
+.trophy {
+  text-align: center;
 }
 
 #canvas {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .particle {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  .trophy {
     text-align: center;
-	display: block;
-	margin: auto;
+  }
+  h1 {
+    text-align: center;
+  }
 }
-
-@media (max-width:1024px){
-
-    .particle{
-        display: none;
-    }
-    .content{
-        display: block;
-    }
-    .trophy{
-        text-align: center;
-    }
-    h1{
-        text-align: center;
-    }
+@media (max-width: 1160px) {
+  .trophy img {
+    padding-top: 0.6rem;
+    height: 25rem;
+    text-align: center;
+  }
 }
-@media (max-width:1160px)
-{
-    .trophy img{
-        padding-top:0.6rem;
-        height:25rem; 
-        text-align: center;
-    }
-    
-
-    }
+@media (min-width: 760px) {
+  .trophy img {
+    padding-top: 2rem;
+    height: 45rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 10rem;
+  }
 }
-@media (min-width:720px)
-{
-    .h1{
-        font-size:8rem ;
-
-        }
-    
-
-    }
-}
-
-
-
