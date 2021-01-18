@@ -1,21 +1,17 @@
 body {
   padding: 0;
   margin: 0;
-  /* background: rgb(0, 97, 242); */
-  /* background: linear-gradient(293.11deg, #000000 -9.33%, rgba(61, 4, 81, 0.87) 107.28%); */
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(134, 42, 148, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  overflow-y: hidden;
-  /* background-repeat: no-repeat;  */
+  /* overflow-y: hidden; */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
+  background: rgb(34, 2, 44);
+  background: radial-gradient(
+    circle,
+    rgba(34, 2, 44, 1) 0%,
+    rgba(44, 2, 86, 1) 100%
+  );
 }
 section {
   max-width: 100%;
@@ -28,24 +24,21 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 5rem;
-  /* line-height: 8.4rem; */
   background: linear-gradient(#eaab48, #ed885b, #f24282);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   margin-right: 8%;
-  /* margin-top: 5%; */
-  /* margin-left: 10%; */
 }
 .content {
   display: grid;
-  grid-template-columns: 70fr 30fr;
-  grid-gap: 2rem;
+  grid-template-columns: 60fr 40fr;
 }
 
 .trophy img {
-  text-align: center; 
+  text-align: center;
 }
 .trophy {
+    height: 100%;
   text-align: center;
 }
 
@@ -76,13 +69,13 @@ h1 {
     text-align: center;
   }
 }
- @media (min-width: 760px) {
+@media (min-width: 760px) {
   .trophy img {
     padding-top: 2rem;
     height: 80%;
     text-align: center;
   }
-   h1 {
-    font-size:900%;
-  } 
-} 
+  h1 {
+    font-size: 900%;
+  }
+}
