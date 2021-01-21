@@ -4,15 +4,6 @@ tsParticles.load("tsparticles", {
     interactivity: {
         detectsOn: "canvas",
         events: {
-            onClick: {
-                enable: false,
-                mode: "push",
-            },
-            onDiv: {
-                elementId: "repulse-div",
-                enable: false,
-                mode: "repulse",
-            },
             onHover: {
                 enable: true,
                 mode: "bubble",
@@ -23,18 +14,17 @@ tsParticles.load("tsparticles", {
                 },
             },
             resize: true,
-        
         },
         modes: {
             bubble: {
-                distance: 30,
+                distance: 40,
                 duration: 2,
-                opacity: 10,
+                opacity: 8,
                 size: 6,
-                speed: 2,
+                speed: 3,
             },
             connect: {
-                distance: 8,
+                distance: 80,
                 lineLinked: { opacity: 0.5 },
                 radius: 60,
             },
@@ -83,11 +73,12 @@ tsParticles.load("tsparticles", {
             straight: false,
         },
         number: {
-            value: 500,
             density: {
                 enable: false,
-                area: 500,
+                area: 2000,
             },
+            limit: 0,
+            value: 700,
         },
         opacity: {
             animation: {
@@ -116,16 +107,16 @@ tsParticles.load("tsparticles", {
             polygon: { sides: 5 },
             stroke: {
                 color: "#ffffff",
-                width: 1,
+                width: 4,
             },
-            type: "square",
+            type: "circle",
         },
         size: {
             animation: {
                 enable: false,
                 minimumValue: 0.1,
-                speed: 400,
-                sync: true,
+                speed: 40,
+                sync: false,
             },
             random: true,
             value: 3,
@@ -134,33 +125,17 @@ tsParticles.load("tsparticles", {
     polygon: {
         draw: {
             enable: true,
-            lineColor: "rgba(255,255,255,0.2)",
-            lineWidth: 0.5,
+            stroke: {
+                color: "rgba(255,255,255,0.2)"
+            },
+            lineWidth: 1,
         },
         move: {
-            radius: 5,
+            radius: 6,
         },
-        inlineArrangement: "equidistant",
-        scale: 0.8,
+        inline: {arrangement: "equidistant"},
+        scale: 1.1,
         type: "inline",
         url: "static/img/trophy.svg",
     },
 });
-var stats = new Stats();
-stats.setMode(0);
-stats.domElement.style.position = "absolute";
-stats.domElement.style.left = "0px";
-stats.domElement.style.top = "0px";
-document.body.appendChild(stats.domElement);
-var count_particles = document.querySelector(".js-count-particles");
-var update = function () {
-    stats.begin();
-    stats.end();
-    if (tsParticles.domItem(0).particles.array) {
-        count_particles.innerText = tsParticles.domItem(
-            0
-        ).particles.array.length;
-    }
-    requestAnimationFrame(update);
-};
-requestAnimationFrame(update);
